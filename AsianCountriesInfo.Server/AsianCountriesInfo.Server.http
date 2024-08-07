@@ -1,0 +1,6 @@
+@AsianCountriesInfo.Server_HostAddress = http://localhost:5070
+
+GET {{AsianCountriesInfo.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
