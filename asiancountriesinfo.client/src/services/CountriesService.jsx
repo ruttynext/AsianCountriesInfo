@@ -1,5 +1,5 @@
 
-import { get } from "./ApiService";
+import { get } from "./apiService";
 
 const API_URL = 'http://localhost:5070/Countries';
 
