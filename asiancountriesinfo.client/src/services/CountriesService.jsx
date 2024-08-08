@@ -1,7 +1,7 @@
 
 import { get } from "./ApiService";
 
-const API_URL = 'https://localhost:7246/Countries';
+const API_URL = 'http://localhost:5070/Countries';
 
 export const getAsianCountries = async () => {
     try {

@@ -5,76 +5,76 @@ namespace AsianCountriesInfo.Server.Models
     public class Country
     {
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [JsonPropertyName("topLevelDomain")]
-        public List<string> TopLevelDomain { get; set; }
+        public List<string>? TopLevelDomain { get; set; }
 
         [JsonPropertyName("alpha2Code")]
-        public string Alpha2Code { get; set; }
+        public string? Alpha2Code { get; set; }
 
         [JsonPropertyName("alpha3Code")]
-        public string Alpha3Code { get; set; }
+        public string? Alpha3Code { get; set; }
 
         [JsonPropertyName("callingCodes")]
-        public List<string> CallingCodes { get; set; }
+        public List<string>? CallingCodes { get; set; }
 
         [JsonPropertyName("capital")]
-        public string Capital { get; set; }
+        public string? Capital { get; set; }
 
         [JsonPropertyName("altSpellings")]
-        public List<string> AltSpellings { get; set; }
+        public List<string>? AltSpellings { get; set; }
 
         [JsonPropertyName("subregion")]
-        public string Subregion { get; set; }
+        public string? Subregion { get; set; }
 
         [JsonPropertyName("region")]
-        public string Region { get; set; }
+        public string? Region { get; set; }
 
         [JsonPropertyName("population")]
         public int Population { get; set; }
 
         [JsonPropertyName("latlng")]
-        public List<double> Latlng { get; set; }
+        public List<double>? Latlng { get; set; }
 
         [JsonPropertyName("demonym")]
-        public string Demonym { get; set; }
+        public string? Demonym { get; set; }
 
         [JsonPropertyName("area")]
         public double? Area { get; set; }
 
         [JsonPropertyName("timezones")]
-        public List<string> Timezones { get; set; }
+        public List<string>? Timezones { get; set; }
 
         [JsonPropertyName("borders")]
-        public List<string> Borders { get; set; }
+        public List<string>? Borders { get; set; }
 
         [JsonPropertyName("nativeName")]
-        public string NativeName { get; set; }
+        public string? NativeName { get; set; }
 
         [JsonPropertyName("numericCode")]
-        public string NumericCode { get; set; }
+        public string? NumericCode { get; set; }
 
         [JsonPropertyName("flags")]
-        public Flags Flags { get; set; }
+        public Flags? Flags { get; set; }
 
         [JsonPropertyName("currencies")]
-        public List<Currency> Currencies { get; set; }
+        public List<Currency>? Currencies { get; set; }
 
         [JsonPropertyName("languages")]
-        public List<Language> Languages { get; set; }
+        public List<Language>? Languages { get; set; }
 
         [JsonPropertyName("translations")]
-        public Translations Translations { get; set; }
+        public Translations? Translations { get; set; }
 
         [JsonPropertyName("flag")]
-        public string Flag { get; set; }
+        public string? Flag { get; set; }
 
         [JsonPropertyName("regionalBlocs")]
-        public List<RegionalBloc> RegionalBlocs { get; set; }
+        public List<RegionalBloc>? RegionalBlocs { get; set; }
 
         [JsonPropertyName("cioc")]
-        public string Cioc { get; set; }
+        public string? Cioc { get; set; }
 
         [JsonPropertyName("independent")]
         public bool Independent { get; set; }
