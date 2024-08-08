@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import MainPage from './component/MainPage';
-import CountryDetails from './component/CountryDetails';
-
-import { getAsianCountries } from './services/apiService';
+import MainPage from './component/MainPage/MainPage';
+import CountryDetails from './component/CountryDetails/CountryDetails';
 import { BrowserRouter as Router, Route, Routes, Link, useParams, useNavigate } from 'react-router-dom';
+import { getAsianCountries } from './services/CountriesService';
 
 function App() {
 

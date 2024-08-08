@@ -1,0 +1,38 @@
+.container-countries-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px; /* Gap between cards */
+    margin-top: 150px; /* Add margin to clear the fixed header, adjust as needed */
+}
+
+.country-card {
+    /*flex: 0 1 calc(33.333% - 16px);*/ /* Three cards per row by default */
+    min-width: 350px; /* Minimum card width */
+    max-width: 100%; /* Ensures card doesn't exceed screen width */
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: gold; /* Change as per your design */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 20px;
+    /*height: 60px;*/ /* Adjust height as needed */
+}
+
+
+@media (max-width: 768px) {
+    .country-card {
+        flex: 0 1 calc(50% - 16px); /* Two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .country-card {
+        flex: 0 1 100%; /* One card per row on small screens */
+    }
+}

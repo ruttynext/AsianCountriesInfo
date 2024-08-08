@@ -1,9 +1,7 @@
 
-const API_URL = 'https://localhost:7246/Countries';
-
-export const getAsianCountries = async () => {
+export const get = async (url) => {
     try {
-        const response = await fetch('https://localhost:7246/Countries');
+        const response = await fetch(url);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -11,5 +9,6 @@ export const getAsianCountries = async () => {
         return data;
     } catch (error) {
         console.error('Fetch error:', error);
+        throw error; 
     }
 };
